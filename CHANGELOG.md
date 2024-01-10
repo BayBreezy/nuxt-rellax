@@ -1,8 +1,6 @@
 # Changelog
 
-
 ## v0.0.2
-
 
 ### 🏡 Chore
 
@@ -12,4 +10,3 @@
 ### ❤️ Contributors
 
 - Behon Baker <behon.baker@yahoo.com>
-
