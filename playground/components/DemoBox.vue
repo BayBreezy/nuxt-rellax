@@ -1,6 +1,6 @@
 <template>
   <div :class="styles({ class: $attrs.class })">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

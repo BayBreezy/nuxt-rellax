@@ -5,7 +5,7 @@
       :class="styles({ class: props.class })"
     >
       <slot>
-        <div class="h-full w-full rounded-md bg-primary"></div>
+        <div class="h-full w-full rounded-md bg-primary" />
       </slot>
     </TabsIndicator>
   </ClientOnly>

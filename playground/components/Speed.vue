@@ -16,13 +16,14 @@
         target="_blank"
         href="https://dixonandmoe.com/rellax/#Speed"
         class="text-sky-500 underline underline-offset-2"
-        >Speed</NuxtLink
       >
+        Speed
+      </NuxtLink>
     </p>
-    <UiTabs class="mt-7" defaultValue="preview">
+    <UiTabs class="mt-7" default-value="preview">
       <UiTabsList class="mb-5">
-        <UiTabsTrigger value="preview">Preview</UiTabsTrigger>
-        <UiTabsTrigger value="code">Code</UiTabsTrigger>
+        <UiTabsTrigger value="preview"> Preview </UiTabsTrigger>
+        <UiTabsTrigger value="code"> Code </UiTabsTrigger>
       </UiTabsList>
 
       <UiTabsContent value="preview">
@@ -44,7 +45,7 @@
         </section>
       </UiTabsContent>
       <UiTabsContent value="code">
-        <div v-if="wrapperHtml" v-html="wrapperHtml"></div>
+        <div v-if="wrapperHtml" v-html="wrapperHtml" />
       </UiTabsContent>
     </UiTabs>
   </UiContainer>

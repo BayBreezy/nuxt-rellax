@@ -4,11 +4,11 @@
     <div class="relative">
       <div
         class="hero__pt absolute inset-0 z-[-1] h-full w-full bg-[linear-gradient(to_right,_theme(colors.muted.DEFAULT)_1px,_transparent_1px),linear-gradient(to_bottom,_theme(colors.muted.DEFAULT)_1px,_transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(circle,_#000_0%,_transparent_70%)]"
-      ></div>
+      />
       <UiContainer
         class="flex h-[calc(100dvh_-_200px)] flex-col items-center justify-center lg:h-[calc(100dvh_-_60px)]"
       >
-        <UiBadge variant="outline" class="hero__item px-3 py-1.5 text-sm">Rellax</UiBadge>
+        <UiBadge variant="outline" class="hero__item px-3 py-1.5 text-sm"> Rellax </UiBadge>
         <h1
           v-rellax
           class="hero__item mt-10 max-w-lg text-center text-4xl font-bold leading-[1.1] tracking-tight lg:text-5xl"
@@ -19,22 +19,24 @@
             external
             href="https://dixonandmoe.com/rellax"
             class="text-sky-500 underline-offset-2 hover:underline"
-            >Rellax</NuxtLink
           >
+            Rellax
+          </NuxtLink>
           to your
           <NuxtLink
             target="_blank"
             external
             href="https://nuxt.com/"
             class="text-sky-500 underline-offset-2 hover:underline"
-            >Nuxt</NuxtLink
           >
+            Nuxt
+          </NuxtLink>
           app with ease
         </h1>
         <div v-rellax class="hero__item mt-10">
-          <UiButton to="/#custom-wrapper" class="rounded-full"
-            >Scroll for more <Icon class="animate-bounce" name="lucide:arrow-down"
-          /></UiButton>
+          <UiButton to="/#custom-wrapper" class="rounded-full">
+            Scroll for more <Icon class="animate-bounce" name="lucide:arrow-down" />
+          </UiButton>
         </div>
       </UiContainer>
     </div>

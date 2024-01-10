@@ -11,11 +11,11 @@
       you want to add the rellax effect to. The second argument is the options object.
     </p>
 
-    <UiTabs class="mt-7" defaultValue="preview">
+    <UiTabs class="mt-7" default-value="preview">
       <UiTabsList class="mb-5">
-        <UiTabsTrigger value="preview">Preview</UiTabsTrigger>
-        <UiTabsTrigger value="html">HTML</UiTabsTrigger>
-        <UiTabsTrigger value="script">Script</UiTabsTrigger>
+        <UiTabsTrigger value="preview"> Preview </UiTabsTrigger>
+        <UiTabsTrigger value="html"> HTML </UiTabsTrigger>
+        <UiTabsTrigger value="script"> Script </UiTabsTrigger>
       </UiTabsList>
 
       <UiTabsContent value="preview">
@@ -34,10 +34,10 @@
         </section>
       </UiTabsContent>
       <UiTabsContent value="html">
-        <div v-if="wrapperHtml" v-html="wrapperHtml"></div>
+        <div v-if="wrapperHtml" v-html="wrapperHtml" />
       </UiTabsContent>
       <UiTabsContent value="script">
-        <div v-if="wrapperScript" v-html="wrapperScript"></div>
+        <div v-if="wrapperScript" v-html="wrapperScript" />
       </UiTabsContent>
     </UiTabs>
   </UiContainer>

@@ -5,13 +5,13 @@
     :style="styles"
   >
     <UiContainer class="flex h-14 w-full items-center justify-between">
-      <NuxtLink to="/" class="font-bold">Rellax for Nuxt 3</NuxtLink>
+      <NuxtLink to="/" class="font-bold"> Rellax for Nuxt 3 </NuxtLink>
       <div class="flex items-center gap-2">
         <UiButton
           title="Toggle light & dark mode"
-          @click="$colorMode.preference = $colorMode.value == 'dark' ? 'light' : 'dark'"
           size="icon-sm"
           variant="ghost"
+          @click="$colorMode.preference = $colorMode.value == 'dark' ? 'light' : 'dark'"
         >
           <span class="sr-only">Toggle between light & dark mode</span>
           <Icon class="h-4 w-4" name="lucide:sun-medium" />

@@ -22,9 +22,9 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
-    "lint": "eslint .",
+    "release": "npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "test": "vitest run",
+    "format": "prettier --write .",
     "test:watch": "vitest watch"
   },
   "dependencies": {
@@ -33,6 +33,7 @@
     "rellax": "^1.12.1"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/module-builder": "^0.5.5",
     "@nuxt/schema": "^3.9.1",
@@ -41,6 +42,8 @@
     "changelogen": "^0.5.5",
     "eslint": "^8.56.0",
     "nuxt": "^3.9.1",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "vitest": "^1.1.3"
   }
 }
