@@ -10,6 +10,15 @@ export default defineNuxtModule({
   setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
 
+    // transpile rellax
+    nuxt.options.build.transpile ||= [];
+    nuxt.options.build.transpile.push("rellax");
+
+    nuxt.hook("vite:extendConfig", (config) => {
+      config.optimizeDeps ||= {};
+      config.optimizeDeps.exclude ||= [];
+      config.optimizeDeps.exclude.push("rellax");
+    });
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     // Add plugin
     addPlugin(resolve("./runtime/plugin"));
