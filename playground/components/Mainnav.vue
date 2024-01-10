@@ -19,7 +19,7 @@
         <UiButton
           title="View github repo"
           external
-          to="#"
+          to="https://github.com/BayBreezy/nuxt-rellax"
           target="_blank"
           size="icon-sm"
           variant="ghost"
