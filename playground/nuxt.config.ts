@@ -8,7 +8,7 @@ const author = "Behon Baker";
 
 export default defineNuxtConfig({
   modules: [
-    "../src/module",
+    "nuxt-rellax",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "@vueuse/nuxt",
