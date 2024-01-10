@@ -16,8 +16,8 @@ export default defineNuxtModule({
 
     nuxt.hook("vite:extendConfig", (config) => {
       config.optimizeDeps ||= {};
-      config.optimizeDeps.exclude ||= [];
-      config.optimizeDeps.exclude.push("rellax");
+      config.optimizeDeps.include ||= [];
+      config.optimizeDeps.include.push("rellax");
     });
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     // Add plugin
