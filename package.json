@@ -39,13 +39,13 @@
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/module-builder": "^0.5.5",
     "@nuxt/schema": "^3.9.3",
-    "@nuxt/test-utils": "^3.10.0",
-    "@types/node": "^20.11.5",
+    "@nuxt/test-utils": "^3.11.0",
+    "@types/node": "^20.11.10",
     "changelogen": "^0.5.5",
     "eslint": "^8.56.0",
     "nuxt": "^3.9.3",
     "prettier": "^3.2.4",
     "prettier-plugin-tailwindcss": "^0.5.11",
-    "vitest": "^1.2.1"
+    "vitest": "^1.2.2"
   }
 }
