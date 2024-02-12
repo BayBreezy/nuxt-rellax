@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.0.5
+
+[compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.4...v0.0.5)
+
+### 🏡 Chore
+
+- **release:** V0.0.4 ([c667012](https://github.com/BayBreezy/nuxt-rellax/commit/c667012))
+- Update package deps ([ecdd68c](https://github.com/BayBreezy/nuxt-rellax/commit/ecdd68c))
+- Update docs deps ([8b75268](https://github.com/BayBreezy/nuxt-rellax/commit/8b75268))
+- Update package deps ([053647b](https://github.com/BayBreezy/nuxt-rellax/commit/053647b))
+- Update playground deps ([90a9542](https://github.com/BayBreezy/nuxt-rellax/commit/90a9542))
+- Update deps ([bf4e904](https://github.com/BayBreezy/nuxt-rellax/commit/bf4e904))
+- Update deps ([e6ab91e](https://github.com/BayBreezy/nuxt-rellax/commit/e6ab91e))
+- Update package deps ([2464385](https://github.com/BayBreezy/nuxt-rellax/commit/2464385))
+
+### ❤️ Contributors
+
+- BayBreezy <behon.baker@yahoo.com>
+- Behon Baker <behon.baker@yahoo.com>
+
 ## v0.0.4
 
 [compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.3...v0.0.4)
