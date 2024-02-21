@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.0.6
+
+[compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.5...v0.0.6)
+
+### 🏡 Chore
+
+- Update deps ([2783859](https://github.com/BayBreezy/nuxt-rellax/commit/2783859))
+- **docs-deps:** Bump deps ([1df81de](https://github.com/BayBreezy/nuxt-rellax/commit/1df81de))
+
+### ❤️ Contributors
+
+- BayBreezy <behon.baker@yahoo.com>
+
 ## v0.0.5
 
 [compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.4...v0.0.5)
