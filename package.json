@@ -31,7 +31,7 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.10.2",
+    "@nuxt/kit": "^3.10.3",
     "@types/rellax": "^1.7.7",
     "rellax": "^1.12.1"
   },
@@ -39,12 +39,12 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/module-builder": "^0.5.5",
-    "@nuxt/schema": "^3.10.2",
+    "@nuxt/schema": "^3.10.3",
     "@nuxt/test-utils": "^3.11.0",
-    "@types/node": "^20.11.19",
+    "@types/node": "^20.11.20",
     "changelogen": "^0.5.5",
-    "eslint": "^8.56.0",
-    "nuxt": "^3.10.2",
+    "eslint": "^8.57.0",
+    "nuxt": "^3.10.3",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "vitest": "^1.3.1"
