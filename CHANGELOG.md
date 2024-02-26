@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.0.7
+
+[compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.6...v0.0.7)
+
+### 🏡 Chore
+
+- **release:** V0.0.6 ([2b4f01d](https://github.com/BayBreezy/nuxt-rellax/commit/2b4f01d))
+
+### ❤️ Contributors
+
+- BayBreezy <behon.baker@yahoo.com>
+
 ## v0.0.6
 
 [compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.5...v0.0.6)
