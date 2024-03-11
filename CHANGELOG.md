@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.0.8
+
+[compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.7...v0.0.8)
+
+### 🏡 Chore
+
+- **docs:** Update deps ([6b592be](https://github.com/BayBreezy/nuxt-rellax/commit/6b592be))
+
+### ❤️ Contributors
+
+- Behon Baker <behon.baker@yahoo.com>
+
 ## v0.0.7
 
 [compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.6...v0.0.7)
