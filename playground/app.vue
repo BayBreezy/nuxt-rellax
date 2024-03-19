@@ -1,12 +1,17 @@
 <template>
-  <div>
-    <NuxtLoadingIndicator />
-
-    <NuxtPage />
-  </div>
+  <ConfigProvider :use-id="useIdFunction">
+    <div>
+      <NuxtLoadingIndicator />
+      <NuxtPage />
+    </div>
+  </ConfigProvider>
 </template>
 
 <script lang="ts" setup>
+  import { ConfigProvider } from "radix-vue";
+
+  const useIdFunction = () => useId();
+
   useHead({
     htmlAttrs: {
       lang: "en",
