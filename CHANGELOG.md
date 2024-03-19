@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.0.9
+
+[compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.8...v0.0.9)
+
+### 🏡 Chore
+
+- **release:** V0.0.8 ([4e95dd5](https://github.com/BayBreezy/nuxt-rellax/commit/4e95dd5))
+- **playground:** Wrap app with the config provider from radix-vue ([dbffe27](https://github.com/BayBreezy/nuxt-rellax/commit/dbffe27))
+- Bump deps ([0e8efa8](https://github.com/BayBreezy/nuxt-rellax/commit/0e8efa8))
+- Update composable ([03ba776](https://github.com/BayBreezy/nuxt-rellax/commit/03ba776))
+- Reinstall module from npm ([3e58cb5](https://github.com/BayBreezy/nuxt-rellax/commit/3e58cb5))
+
+### ❤️ Contributors
+
+- BayBreezy <behon.baker@yahoo.com>
+- Behon Baker <behon.baker@yahoo.com>
+
 ## v0.0.8
 
 [compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.7...v0.0.8)
