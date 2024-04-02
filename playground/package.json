@@ -28,7 +28,7 @@
     "nuxt": "3.11.1",
     "nuxt-icon": "^0.6.10",
     "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.12",
+    "prettier-plugin-tailwindcss": "^0.5.13",
     "shikiji": "^0.10.2",
     "shikiji-transformers": "^0.10.2",
     "tailwindcss-animate": "^1.0.7",
@@ -38,7 +38,7 @@
     "@nuxtjs/google-fonts": "^3.2.0",
     "locomotive-scroll": "^5.0.0-beta.11",
     "nuxt-rellax": "^0.0.9",
-    "radix-vue": "^1.5.3",
+    "radix-vue": "^1.6.1",
     "tailwind-variants": "^0.2.1",
     "vue-use-fixed-header": "^2.0.3"
   },
