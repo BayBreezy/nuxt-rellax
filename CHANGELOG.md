@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.0.10
+
+[compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.9...v0.0.10)
+
+### 🏡 Chore
+
+- Add new version of module from npm ([e5ecb31](https://github.com/BayBreezy/nuxt-rellax/commit/e5ecb31))
+- Bump deps ([f0e3518](https://github.com/BayBreezy/nuxt-rellax/commit/f0e3518))
+- Bump deps ([70b648c](https://github.com/BayBreezy/nuxt-rellax/commit/70b648c))
+- Bump deps ([938e3ae](https://github.com/BayBreezy/nuxt-rellax/commit/938e3ae))
+
+### ❤️ Contributors
+
+- BayBreezy <behon.baker@yahoo.com>
+- Behon Baker <behon.baker@yahoo.com>
+
 ## v0.0.9
 
 [compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.8...v0.0.9)
