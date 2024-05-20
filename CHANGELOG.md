@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.0.11
+
+[compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.10...v0.0.11)
+
+### 🏡 Chore
+
+- Update to latest module version ([b69e51b](https://github.com/BayBreezy/nuxt-rellax/commit/b69e51b))
+
+### ❤️ Contributors
+
+- BayBreezy <behon.baker@yahoo.com>
+
 ## v0.0.10
 
 [compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.9...v0.0.10)
