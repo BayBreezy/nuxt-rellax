@@ -18,10 +18,12 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@kevinmarrec/nuxt-pwa",
   ],
+
   devtools: { enabled: true },
   tailwindcss: { exposeConfig: true },
   colorMode: { classSuffix: "", preference: "dark", fallback: "dark" },
   typescript: { shim: false },
+
   googleFonts: {
     display: "swap",
     download: true,
@@ -53,12 +55,14 @@ export default defineNuxtConfig({
       { from: "tailwind-variants", name: "VariantProps", type: true },
     ],
   },
+
   site: {
     url,
     name: title,
     description,
     defaultLocale: locale,
   },
+
   schemaOrg: {
     identity: {
       type: "Person",
@@ -69,10 +73,13 @@ export default defineNuxtConfig({
       image: logo,
     },
   },
+
   sitemap: {
     autoLastmod: true,
   },
+
   ogImage: { enabled: false },
+
   pwa: {
     icon: { fileName: "logo.png" },
     meta: {
@@ -91,4 +98,6 @@ export default defineNuxtConfig({
       theme_color: "#09090b",
     },
   },
+
+  compatibilityDate: "2024-07-09",
 });
