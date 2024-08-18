@@ -49,8 +49,5 @@
     "shikiji-transformers": "^0.10.2",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.5.4"
-  },
-  "overrides": {
-    "nitropack": "2.9.6"
   }
 }
