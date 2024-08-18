@@ -48,12 +48,9 @@
 </template>
 
 <script lang="ts" setup>
-  const { timeline } = useGsap();
-  const { tl } = timeline();
-
   onMounted(async () => {
-    tl.value
-      ?.from(".hero__item", {
+    useGsap
+      .from(".hero__item", {
         y: 100,
         opacity: 0,
         stagger: 0.2,

@@ -13,10 +13,10 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@vueuse/nuxt",
     "nuxt-icon",
-    "@fdcn/nugget",
     "@nuxtjs/seo",
     "@nuxtjs/google-fonts",
     "@kevinmarrec/nuxt-pwa",
+    "@hypernym/nuxt-gsap",
   ],
 
   devtools: { enabled: true },
@@ -97,6 +97,11 @@ export default defineNuxtConfig({
       short_name: "Nuxt Rellax",
       theme_color: "#09090b",
     },
+  },
+  gsap: {
+    composables: true,
+    provide: false,
+    extraPlugins: { scrollTrigger: true },
   },
 
   compatibilityDate: "2024-07-09",
