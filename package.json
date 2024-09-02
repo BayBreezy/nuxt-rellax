@@ -1,6 +1,6 @@
 {
   "name": "nuxt-rellax",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Nuxt module that provides a directive and composable for the Rellax parallax library",
   "repository": {
     "url": "git+https://github.com/BayBreezy/nuxt-rellax.git"

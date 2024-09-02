@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.0.14
+
+[compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.13...v0.0.14)
+
+### 📖 Documentation
+
+- Remove override for nitropack ([f18816f](https://github.com/BayBreezy/nuxt-rellax/commit/f18816f))
+
+### 🏡 Chore
+
+- **release:** V0.0.13 ([66921c0](https://github.com/BayBreezy/nuxt-rellax/commit/66921c0))
+- Bump deps ([5bb9bee](https://github.com/BayBreezy/nuxt-rellax/commit/5bb9bee))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.13
 
 [compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.12...v0.0.13)
