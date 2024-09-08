@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.0.15
+
+[compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.14...v0.0.15)
+
+### 🏡 Chore
+
+- Bump deps ([5d274fc](https://github.com/BayBreezy/nuxt-rellax/commit/5d274fc))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.14
 
 [compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.13...v0.0.14)
