@@ -49,22 +49,21 @@
 
 <script lang="ts" setup>
   onMounted(async () => {
-    useGsap
-      .from(".hero__item", {
-        y: 100,
+    const tl = useGsap.timeline();
+    tl.from(".hero__item", {
+      y: 100,
+      opacity: 0,
+      stagger: 0.2,
+      duration: 1,
+    }).from(
+      ".hero__pt",
+      {
         opacity: 0,
-        stagger: 0.2,
+        scale: 0.8,
         duration: 1,
-      })
-      .from(
-        ".hero__pt",
-        {
-          opacity: 0,
-          scale: 0.8,
-          duration: 1,
-        },
-        "-=1"
-      );
+      },
+      "-=1"
+    );
   });
 
   const title = "Nuxt 3 Rellax Module: Effortless Parallax Effects for Dynamic Web Experiences";

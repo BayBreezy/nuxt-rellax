@@ -22,7 +22,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   tailwindcss: { exposeConfig: true },
   colorMode: { classSuffix: "", preference: "dark", fallback: "dark" },
-  typescript: { shim: false },
 
   googleFonts: {
     display: "swap",
