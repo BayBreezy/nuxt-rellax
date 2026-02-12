@@ -1,4 +1,5 @@
 import { defineNuxtModule, addPlugin, createResolver, addImports } from "@nuxt/kit";
+import { addCustomTab } from "@nuxt/devtools-kit";
 import { name, version } from "../package.json";
 
 export default defineNuxtModule({
@@ -10,15 +11,14 @@ export default defineNuxtModule({
   setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
 
-    // transpile rellax
-    nuxt.options.build.transpile ||= [];
-    nuxt.options.build.transpile.push("rellax");
-
-    nuxt.hook("vite:extendConfig", (config) => {
-      config.optimizeDeps ||= {};
-      config.optimizeDeps.include ||= [];
-      config.optimizeDeps.include.push("rellax");
-    });
+    // Ensure Vite pre-bundles rellax for proper CJS -> ESM interop.
+    // NOTE: Do NOT add rellax to build.transpile - Nuxt's vite-builder puts
+    // transpile entries into optimizeDeps.exclude, which would prevent pre-bundling.
+    nuxt.options.vite.optimizeDeps ||= {};
+    nuxt.options.vite.optimizeDeps.include ||= [];
+    if (!nuxt.options.vite.optimizeDeps.include.includes("rellax")) {
+      nuxt.options.vite.optimizeDeps.include.push("rellax");
+    }
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     // Add plugin
     addPlugin(resolve("./runtime/plugin"));
@@ -28,21 +28,15 @@ export default defineNuxtModule({
       as: "useRellax",
       from: resolve("./runtime/useRellax"),
     });
-    // add custom tab
-    nuxt.hook("devtools:customTabs", (tabs) => {
-      tabs.push({
-        // unique identifier
-        name,
-        // title to display in the tab
-        title: "Rellax Docs",
-        // any icon from Iconify, or a URL to an image
-        icon: "arcticons:o-relax",
-        // iframe view
-        view: {
-          type: "iframe",
-          src: "https://dixonandmoe.com/rellax/",
-        },
-      });
+    // add custom devtools tab
+    addCustomTab({
+      name,
+      title: "Rellax Docs",
+      icon: "arcticons:o-relax",
+      view: {
+        type: "iframe",
+        src: "https://dixonandmoe.com/rellax/",
+      },
     });
   },
 });

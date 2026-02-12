@@ -1,6 +1,7 @@
 import { defineNuxtPlugin } from "#app";
-import Rellax, { type RellaxInstance, type RellaxOptions } from "rellax";
-import { type Directive } from "vue";
+import Rellax from "rellax";
+import type { RellaxInstance, RellaxOptions } from "rellax";
+import type { Directive } from "vue";
 
 export default defineNuxtPlugin((nuxtApp) => {
   // A directive that can be used in Vue templates
@@ -12,17 +13,19 @@ export default defineNuxtPlugin((nuxtApp) => {
     },
     mounted(el, binding) {
       // Create a new instance of rellax
-      const rellax = new Rellax(el, binding?.value || {});
-      // Save the instance to the element
-      el._rellax = rellax;
+      el._rellax = new Rellax(el, binding?.value || {});
     },
-    updated(el, binding) {
+    updated(el) {
       // Update the instance when the element is updated
-      el._rellax.refresh();
+      if (el._rellax) {
+        el._rellax.refresh();
+      }
     },
     unmounted(el) {
       // Destroy the instance when the element is unmounted
-      el._rellax.destroy();
+      if (el._rellax) {
+        el._rellax.destroy();
+      }
     },
   });
   // Return an instance of rellax so the user can do whatever with it

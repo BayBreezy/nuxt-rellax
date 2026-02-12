@@ -9,7 +9,7 @@
       >
       attribute to set the speed of the element to something other than the default value (which is
       -2). A negative value will make it move slower than regular scrolling, and a positive value
-      will make it move faster. We recommend keeping the speed between -10 and +10. <br />
+      will make it move faster. We recommend keeping the speed between -10 and +10. <br >
       Visit this link for the full documentation:
       <NuxtLink
         external
@@ -52,12 +52,12 @@
 </template>
 
 <script lang="ts" setup>
-  import { getHighlighter } from "shikiji";
-  import { transformerNotationHighlight } from "shikiji-transformers";
+  import { createHighlighter } from "shiki";
+  import { transformerNotationHighlight } from "@shikijs/transformers";
 
   const wrapperHtml = ref();
 
-  const highlighter = await getHighlighter({
+  const highlighter = await createHighlighter({
     themes: ["material-theme-ocean", "aurora-x", "vitesse-dark"],
     langs: ["vue-html", "typescript", "javascript"],
   });

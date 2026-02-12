@@ -1,10 +1,11 @@
-import Rellax, { type RellaxOptions } from "rellax";
+import Rellax from "rellax";
+import type { RellaxOptions } from "rellax";
 import { onUpdated, onUnmounted, ref, onMounted } from "vue";
 
 export const useRellax = (el?: string | Element | undefined, options?: RellaxOptions) => {
   if (typeof window === "undefined") return;
 
-  const instance = ref<InstanceType<typeof Rellax> | null>(null);
+  const instance = ref<any>(null);
 
   const initializeRellax = () => {
     instance.value = new Rellax(el, options);

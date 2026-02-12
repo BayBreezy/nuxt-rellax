@@ -44,8 +44,8 @@
 </template>
 
 <script lang="ts" setup>
-  import { getHighlighter } from "shikiji";
-  import { transformerNotationHighlight } from "shikiji-transformers";
+  import { createHighlighter } from "shiki";
+  import { transformerNotationHighlight } from "@shikijs/transformers";
 
   useRellax(".c-rellax", {
     // will apply to all elements
@@ -55,7 +55,7 @@
   const wrapperHtml = ref();
   const wrapperScript = ref();
 
-  const highlighter = await getHighlighter({
+  const highlighter = await createHighlighter({
     themes: ["material-theme-ocean", "aurora-x", "vitesse-dark"],
     langs: ["vue-html", "typescript", "javascript"],
   });

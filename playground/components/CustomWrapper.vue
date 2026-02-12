@@ -2,7 +2,7 @@
   <UiContainer class="py-10">
     <h2 class="text-2xl font-bold tracking-tight">Custom wrapper</h2>
     <p class="mt-2 leading-loose lg:text-[17px] lg:leading-relaxed">
-      You can create a custom element and pass the wrapper property to the directive. <br />
+      You can create a custom element and pass the wrapper property to the directive. <br >
       Visit this link for the full documentation:
       <NuxtLink
         external
@@ -42,12 +42,12 @@
 </template>
 
 <script lang="ts" setup>
-  import { getHighlighter } from "shikiji";
-  import { transformerNotationHighlight } from "shikiji-transformers";
+  import { createHighlighter } from "shiki";
+  import { transformerNotationHighlight } from "@shikijs/transformers";
 
   const wrapperHtml = ref();
 
-  const highlighter = await getHighlighter({
+  const highlighter = await createHighlighter({
     themes: ["material-theme-ocean", "aurora-x", "vitesse-dark"],
     langs: ["vue-html", "typescript", "javascript"],
   });

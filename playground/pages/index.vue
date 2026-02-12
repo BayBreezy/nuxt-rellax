@@ -88,6 +88,8 @@
 </script>
 
 <style>
+  @reference "~/assets/css/tailwind.css";
+
   html.dark .shiki,
   html.dark .shiki span {
     color: var(--shiki-dark) !important;

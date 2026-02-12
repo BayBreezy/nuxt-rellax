@@ -1,5 +1,5 @@
 <template>
-  <div :class="styles({ class: $attrs.class })">
+  <div :class="styles({ class: $attrs.class as string })">
     <slot />
   </div>
 </template>

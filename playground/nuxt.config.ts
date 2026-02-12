@@ -1,4 +1,6 @@
-const title = "Nuxt 3 Rellax Module: Effortless Parallax Effects for Dynamic Web Experiences";
+import tailwindcss from "@tailwindcss/vite";
+
+const title = "Nuxt Rellax Module: Effortless Parallax Effects for Dynamic Web Experiences";
 const description =
   "Unlock the power of seamless parallax effects in your Nuxt 3 applications with our Rellax module. Explore the documentation to effortlessly integrate this module, offering composable utilities and directives for an enhanced and dynamic web experience. Elevate your website's visual appeal with SEO-friendly parallax scrolling - the perfect blend of performance and aesthetics.";
 const url = process.env.PUBLIC_URL || "http://localhost:3000";
@@ -9,26 +11,27 @@ const author = "Behon Baker";
 export default defineNuxtConfig({
   modules: [
     "nuxt-rellax",
-    "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "@vueuse/nuxt",
-    "nuxt-icon",
+    "@nuxt/icon",
     "@nuxtjs/seo",
-    "@nuxtjs/google-fonts",
-    "@kevinmarrec/nuxt-pwa",
+    "@nuxt/fonts",
     "@hypernym/nuxt-gsap",
   ],
 
   devtools: { enabled: true },
-  tailwindcss: { exposeConfig: true },
+  css: ["~/assets/css/tailwind.css"],
   colorMode: { classSuffix: "", preference: "dark", fallback: "dark" },
 
-  googleFonts: {
-    display: "swap",
-    download: true,
-    families: {
-      "JetBrains Mono": true,
-    },
+  vite: {
+    plugins: [tailwindcss() as any],
+  },
+
+  fonts: {
+    families: [
+      { name: "Inter", provider: "google" },
+      { name: "JetBrains Mono", provider: "google" },
+    ],
   },
 
   app: {
@@ -79,24 +82,6 @@ export default defineNuxtConfig({
 
   ogImage: { enabled: false },
 
-  pwa: {
-    icon: { fileName: "logo.png" },
-    meta: {
-      author,
-      description,
-      title,
-      lang: locale,
-      name: "Nuxt Rellax",
-      twitterCard: "summary_large_image",
-      theme_color: "#09090b",
-    },
-    manifest: {
-      description,
-      name: "Nuxt Rellax",
-      short_name: "Nuxt Rellax",
-      theme_color: "#09090b",
-    },
-  },
   gsap: {
     composables: true,
     provide: false,
