@@ -1,15 +1,33 @@
 import { describe, it, expect } from "vitest";
 import { fileURLToPath } from "node:url";
-import { setup, $fetch } from "@nuxt/test-utils/e2e";
+import { setup, $fetch, useTestContext } from "@nuxt/test-utils/e2e";
 
-describe("ssr", async () => {
-  await setup({
-    rootDir: fileURLToPath(new URL("./fixtures/basic", import.meta.url)),
+const fixtureDir = fileURLToPath(new URL("./fixtures/basic", import.meta.url));
+
+describe("module setup", async () => {
+  await setup({ rootDir: fixtureDir });
+
+  it("renders basic page content when visiting index", async () => {
+    const html = await $fetch("/");
+
+    expect(html).toContain("<div>basic</div>");
   });
 
-  it("renders the index page", async () => {
-    // Get response to a server-rendered page with `$fetch`.
+  it("provides $rellax when plugin is registered", async () => {
     const html = await $fetch("/");
-    expect(html).toContain("<div>basic</div>");
+
+    expect(html).toContain("rellax-available");
+  });
+
+  it("includes rellax in optimizeDeps for CJS interop", () => {
+    const { nuxt } = useTestContext();
+
+    expect(nuxt?.options.vite.optimizeDeps?.include).toContain("rellax");
+  });
+
+  it("excludes rellax from build.transpile to preserve pre-bundling", () => {
+    const { nuxt } = useTestContext();
+
+    expect(nuxt?.options.build.transpile).not.toContain("rellax");
   });
 });
