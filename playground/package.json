@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "locomotive-scroll": "^5.0.1",
+    "nuxt-rellax": "^0.0.18",
     "radix-vue": "1.9.17",
     "tailwind-merge": "^3.4.1",
     "tailwind-variants": "^3.2.2",
@@ -50,5 +51,6 @@
     "shiki": "^3.22.0",
     "tailwindcss": "^4.2.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "packageManager": "pnpm@10.29.3"
 }
