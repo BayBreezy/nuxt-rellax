@@ -19,8 +19,8 @@
     "dist"
   ],
   "scripts": {
-    "afterClone": "npm i && cd playground && npm i && cd .. && npm run dev:prepare",
-    "clean": "rm -rf dist node_modules package-lock.json yarn.lock && npm install",
+    "afterClone": "ni && cd playground && ni && cd .. && nr dev:prepare",
+    "clean": "rm -rf dist node_modules package-lock.json yarn.lock pnpm-lock.yaml && ni",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
@@ -37,6 +37,7 @@
     "rellax": "^1.12.1"
   },
   "devDependencies": {
+    "@antfu/ni": "28.2.0",
     "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
     "@nuxt/eslint-config": "^1.15.1",
     "@nuxt/module-builder": "^1.0.2",
