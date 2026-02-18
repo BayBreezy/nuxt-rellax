@@ -26,7 +26,7 @@
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "format": "prettier --write .",
     "prepack": "nuxt-module-build build",
-    "release": "npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "release": "nr test && nr prepack && changelogen --release && npm publish && git push --follow-tags",
     "test": "vitest run",
     "test:watch": "vitest watch"
   },
