@@ -1,5 +1,34 @@
 # Changelog
 
+## v0.0.18
+
+[compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.17...v0.0.18)
+
+### 🩹 Fixes
+
+- Add Nuxt 4 support with Vite 7 CJS interop ([e78df96](https://github.com/BayBreezy/nuxt-rellax/commit/e78df96))
+- Update release script to use nr commands ([b0a85ce](https://github.com/BayBreezy/nuxt-rellax/commit/b0a85ce))
+
+### 📖 Documentation
+
+- Add vue & vue router to docs ([09376ec](https://github.com/BayBreezy/nuxt-rellax/commit/09376ec))
+
+### 🏡 Chore
+
+- **release:** V0.0.17 ([498693e](https://github.com/BayBreezy/nuxt-rellax/commit/498693e))
+- Bump node version ([3922687](https://github.com/BayBreezy/nuxt-rellax/commit/3922687))
+- Add pnpm workspace configuration with built dependencies ([79c7ad5](https://github.com/BayBreezy/nuxt-rellax/commit/79c7ad5))
+- Update package.json config ([02f64bc](https://github.com/BayBreezy/nuxt-rellax/commit/02f64bc))
+
+### ✅ Tests
+
+- Add unit tests for directive, composable, plugin, and module config ([2fc8691](https://github.com/BayBreezy/nuxt-rellax/commit/2fc8691))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](https://github.com/BayBreezy))
+- Soryn ([@50rayn](https://github.com/50rayn))
+
 ## v0.0.17
 
 [compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.16...v0.0.17)
