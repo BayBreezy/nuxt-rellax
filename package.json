@@ -37,7 +37,7 @@
     "rellax": "^1.12.1"
   },
   "devDependencies": {
-    "@antfu/ni": "28.2.0",
+    "@antfu/ni": "29.0.0",
     "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
     "@nuxt/eslint-config": "^1.15.1",
     "@nuxt/module-builder": "^1.0.2",
