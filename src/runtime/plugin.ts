@@ -2,34 +2,61 @@ import Rellax from "rellax";
 import type { RellaxInstance, RellaxOptions } from "rellax";
 import type { Directive } from "vue";
 
-import { defineNuxtPlugin } from "#app";
+import { defineNuxtPlugin, useRuntimeConfig } from "#app";
 
 export default defineNuxtPlugin((nuxtApp) => {
-  // A directive that can be used in Vue templates
+  const config = useRuntimeConfig();
+  const moduleConfig = (config.public as any).rellax || {};
+
+  const shouldSkip = (): boolean => {
+    if (
+      moduleConfig.respectReducedMotion !== false &&
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      return true;
+    }
+    if (
+      moduleConfig.disableBelow > 0 &&
+      typeof window !== "undefined" &&
+      window.innerWidth < moduleConfig.disableBelow
+    ) {
+      return true;
+    }
+    return false;
+  };
+
   nuxtApp.vueApp.directive("rellax", <
-    Directive<HTMLElement & { _rellax: RellaxInstance }, RellaxOptions>
+    Directive<HTMLElement & { _rellax?: RellaxInstance }, RellaxOptions>
   >{
     getSSRProps() {
       return {};
     },
     mounted(el, binding) {
-      // Create a new instance of rellax
-      el._rellax = new Rellax(el, binding?.value || {});
+      if (shouldSkip()) return;
+
+      const opts: RellaxOptions = {
+        ...moduleConfig.defaults,
+        ...binding.value,
+      };
+
+      // Convenience modifiers as shorthand for common options
+      if (binding.modifiers.center) opts.center = true;
+      if (binding.modifiers.horizontal) opts.horizontal = true;
+
+      el._rellax = new Rellax(el, opts);
     },
     updated(el) {
-      // Update the instance when the element is updated
-      if (el._rellax) {
-        el._rellax.refresh();
-      }
+      el._rellax?.refresh();
     },
     unmounted(el) {
-      // Destroy the instance when the element is unmounted
       if (el._rellax) {
         el._rellax.destroy();
+        delete el._rellax;
       }
     },
   });
-  // Return an instance of rellax so the user can do whatever with it
+
   return {
     provide: {
       rellax: Rellax,
