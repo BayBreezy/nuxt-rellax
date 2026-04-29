@@ -1,7 +1,7 @@
 <template>
   <header
     ref="headerRef"
-    class="sticky top-0 z-20 border-b bg-background/90 backdrop-blur"
+    class="bg-background/90 sticky top-0 z-20 border-b backdrop-blur"
     :style="styles"
   >
     <UiContainer class="flex h-14 w-full items-center justify-between">

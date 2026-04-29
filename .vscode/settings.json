@@ -1,3 +1,5 @@
 {
-  "nuxtr.monorepoMode.DirectoryName": ".playground"
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "oxc.oxc-vscode"
 }

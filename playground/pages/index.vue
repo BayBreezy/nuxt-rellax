@@ -3,7 +3,7 @@
     <Mainnav />
     <div class="relative">
       <div
-        class="hero__pt absolute inset-0 z-[-1] h-full w-full bg-[linear-gradient(to_right,_theme(colors.muted.DEFAULT)_1px,_transparent_1px),linear-gradient(to_bottom,_theme(colors.muted.DEFAULT)_1px,_transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(circle,_#000_0%,_transparent_70%)]"
+        class="hero__pt bg-[linear-gradient(to_right,_theme(colors.muted.DEFAULT)_1px,_transparent_1px),linear-gradient(to_bottom,_theme(colors.muted.DEFAULT)_1px,_transparent_1px)] absolute inset-0 z-[-1] h-full w-full [mask-image:radial-gradient(circle,_#000_0%,_transparent_70%)] bg-[size:100px_100px]"
       />
       <UiContainer
         class="flex h-[calc(100dvh_-_200px)] flex-col items-center justify-center lg:h-[calc(100dvh_-_60px)]"
@@ -11,7 +11,7 @@
         <UiBadge variant="outline" class="hero__item px-3 py-1.5 text-sm"> Rellax </UiBadge>
         <h1
           v-rellax
-          class="hero__item mt-10 max-w-lg text-center text-4xl font-bold leading-[1.1] tracking-tight lg:text-5xl"
+          class="hero__item mt-10 max-w-lg text-center text-4xl leading-[1.1] font-bold tracking-tight lg:text-5xl"
         >
           Add
           <NuxtLink
@@ -62,7 +62,7 @@
         scale: 0.8,
         duration: 1,
       },
-      "-=1"
+      "-=1",
     );
   });
 

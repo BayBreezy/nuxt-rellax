@@ -1,5 +1,6 @@
-import { defineNuxtModule, addPlugin, createResolver, addImports } from "@nuxt/kit";
 import { addCustomTab } from "@nuxt/devtools-kit";
+import { defineNuxtModule, addPlugin, createResolver, addImports } from "@nuxt/kit";
+
 import { name, version } from "../package.json";
 
 export default defineNuxtModule({

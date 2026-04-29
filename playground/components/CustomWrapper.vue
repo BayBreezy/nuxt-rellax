@@ -2,7 +2,7 @@
   <UiContainer class="py-10">
     <h2 class="text-2xl font-bold tracking-tight">Custom wrapper</h2>
     <p class="mt-2 leading-loose lg:text-[17px] lg:leading-relaxed">
-      You can create a custom element and pass the wrapper property to the directive. <br >
+      You can create a custom element and pass the wrapper property to the directive. <br />
       Visit this link for the full documentation:
       <NuxtLink
         external
@@ -22,7 +22,7 @@
       <UiTabsContent value="preview">
         <section
           id="custom-wrapper"
-          class="h-[500px] scroll-mt-[300px] overflow-y-auto rounded-lg bg-muted p-5 lg:scroll-mt-[200px] lg:p-10"
+          class="bg-muted h-[500px] scroll-mt-[300px] overflow-y-auto rounded-lg p-5 lg:scroll-mt-[200px] lg:p-10"
         >
           <div class="flex h-dvh items-center justify-center gap-5">
             <DemoBox v-rellax="{ wrapper: '#custom-wrapper' }">
@@ -42,8 +42,8 @@
 </template>
 
 <script lang="ts" setup>
-  import { createHighlighter } from "shiki";
   import { transformerNotationHighlight } from "@shikijs/transformers";
+  import { createHighlighter } from "shiki";
 
   const wrapperHtml = ref();
 

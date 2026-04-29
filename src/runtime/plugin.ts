@@ -1,7 +1,8 @@
-import { defineNuxtPlugin } from "#app";
 import Rellax from "rellax";
 import type { RellaxInstance, RellaxOptions } from "rellax";
 import type { Directive } from "vue";
+
+import { defineNuxtPlugin } from "#app";
 
 export default defineNuxtPlugin((nuxtApp) => {
   // A directive that can be used in Vue templates

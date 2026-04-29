@@ -1,6 +1,7 @@
-import { describe, it, expect } from "vitest";
 import { fileURLToPath } from "node:url";
+
 import { setup, $fetch, useTestContext } from "@nuxt/test-utils/e2e";
+import { describe, it, expect } from "vitest";
 
 const fixtureDir = fileURLToPath(new URL("./fixtures/basic", import.meta.url));
 

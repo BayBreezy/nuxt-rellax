@@ -4,12 +4,12 @@
     <p class="mt-2 leading-loose lg:text-[17px] lg:leading-relaxed">
       You can use the
       <code
-        class="inline-flex items-center rounded bg-primary p-1 text-sm leading-none text-primary-foreground"
+        class="bg-primary text-primary-foreground inline-flex items-center rounded p-1 text-sm leading-none"
         >data-rellax-speed</code
       >
       attribute to set the speed of the element to something other than the default value (which is
       -2). A negative value will make it move slower than regular scrolling, and a positive value
-      will make it move faster. We recommend keeping the speed between -10 and +10. <br >
+      will make it move faster. We recommend keeping the speed between -10 and +10. <br />
       Visit this link for the full documentation:
       <NuxtLink
         external
@@ -29,7 +29,7 @@
       <UiTabsContent value="preview">
         <section
           id="custom-wrapper-2"
-          class="h-[500px] scroll-mt-[300px] overflow-y-auto rounded-lg bg-muted p-5 lg:scroll-mt-[200px] lg:p-10"
+          class="bg-muted h-[500px] scroll-mt-[300px] overflow-y-auto rounded-lg p-5 lg:scroll-mt-[200px] lg:p-10"
         >
           <div class="flex h-dvh items-center justify-center gap-5">
             <DemoBox v-rellax="{ wrapper: '#custom-wrapper-2' }" data-rellax-speed="3">
@@ -52,8 +52,8 @@
 </template>
 
 <script lang="ts" setup>
-  import { createHighlighter } from "shiki";
   import { transformerNotationHighlight } from "@shikijs/transformers";
+  import { createHighlighter } from "shiki";
 
   const wrapperHtml = ref();
 

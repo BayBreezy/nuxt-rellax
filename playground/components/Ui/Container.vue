@@ -16,7 +16,7 @@
     >(),
     {
       as: "div",
-    }
+    },
   );
 
   const forwarded = reactiveOmit(props, "class");

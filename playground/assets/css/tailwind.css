@@ -38,28 +38,52 @@
   --animate-collapse-up: collapse-up 0.2s ease-out;
 
   @keyframes accordion-down {
-    from { height: 0px; }
-    to { height: var(--radix-accordion-content-height); }
+    from {
+      height: 0px;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
   }
   @keyframes accordion-up {
-    from { height: var(--radix-accordion-content-height); }
-    to { height: 0px; }
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0px;
+    }
   }
   @keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
   @keyframes fade-out {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
   }
   @keyframes collapse-down {
-    from { height: 0px; }
-    to { height: var(--radix-collapsible-content-height); }
+    from {
+      height: 0px;
+    }
+    to {
+      height: var(--radix-collapsible-content-height);
+    }
   }
   @keyframes collapse-up {
-    from { height: var(--radix-collapsible-content-height); }
-    to { height: 0px; }
+    from {
+      height: var(--radix-collapsible-content-height);
+    }
+    to {
+      height: 0px;
+    }
   }
 }
 
@@ -114,6 +138,8 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
   }
 }

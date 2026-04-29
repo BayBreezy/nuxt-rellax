@@ -58,7 +58,7 @@
       text: undefined,
       variant: "default",
       size: "default",
-    }
+    },
   );
 
   const elementType = computed(() => {
