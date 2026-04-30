@@ -1,20 +1,20 @@
-import { addComponent, addImports, addPlugin, createResolver, defineNuxtModule } from "@nuxt/kit";
 import { addCustomTab } from "@nuxt/devtools-kit";
+import { addComponent, addImports, addPlugin, createResolver, defineNuxtModule } from "@nuxt/kit";
+import type { RellaxOptions } from "rellax";
 
 import { name, version } from "../package.json";
-import type { RellaxOptions } from "rellax";
 
 export interface ModuleOptions {
   /** Default Rellax options merged into every instance created by the directive or composables. */
   defaults?: Partial<RellaxOptions>;
   /**
-   * Disable parallax below this viewport width in pixels.
-   * Set to 0 (default) to never disable based on screen size.
+   * Disable parallax below this viewport width in pixels. Set to 0 (default) to never disable based
+   * on screen size.
    */
   disableBelow?: number;
   /**
-   * Respect the prefers-reduced-motion media query.
-   * When true (default) and the user has reduced motion enabled, all instances are skipped.
+   * Respect the prefers-reduced-motion media query. When true (default) and the user has reduced
+   * motion enabled, all instances are skipped.
    */
   respectReducedMotion?: boolean;
 }
