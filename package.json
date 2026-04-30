@@ -24,43 +24,58 @@
   },
   "scripts": {
     "afterClone": "ni && cd playground && ni && cd .. && nr dev:prepare",
-    "clean": "rm -rf dist node_modules package-lock.json yarn.lock pnpm-lock.yaml && ni",
-    "dev": "nuxi dev playground",
-    "dev:build": "nuxi build playground",
-    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "automd:docs": "nlx automd@latest --dir docs/content --input '**/*.md' --watch",
+    "clean": "node ./scripts/clean.mjs",
+    "dev": "nr dev:prepare && nuxi dev docs --host",
+    "dev:build": "nr prepack && nuxi build docs",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare docs",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
     "prepack": "nuxt-module-build build",
+    "prepare": "husky",
     "release": "nr test && nr prepack && changelogen --release && npm publish && git push --follow-tags",
     "test": "vitest run",
     "test:watch": "vitest watch"
   },
   "dependencies": {
     "@nuxt/devtools-kit": "^3.2.4",
-    "@nuxt/kit": "^4.4.2",
+    "@nuxt/kit": "^4.4.4",
     "@types/rellax": "^1.7.7",
     "rellax": "^1.12.1"
   },
   "devDependencies": {
     "@antfu/ni": "30.1.0",
+    "@commitlint/cli": "^20.5.3",
+    "@commitlint/config-conventional": "^20.5.3",
     "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
     "@nuxt/eslint-config": "^1.15.2",
     "@nuxt/module-builder": "^1.0.2",
-    "@nuxt/schema": "^4.4.2",
+    "@nuxt/schema": "^4.4.4",
     "@nuxt/test-utils": "^4.0.3",
     "@types/node": "^25.6.0",
     "changelogen": "^0.6.2",
     "eslint": "^10.2.1",
-    "nuxt": "^4.4.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "nuxt": "^4.4.4",
     "oxfmt": "^0.47.0",
     "prettier": "^3.8.3",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "typescript": "^6.0.3",
     "vitest": "^4.1.5"
   },
-  "packageManager": "bun@1.3.9",
+  "lint-staged": {
+    "*.{js,ts,vue,css,json,yml}": [
+      "oxfmt --no-error-on-unmatched-pattern"
+    ],
+    "*.{js,ts,vue}": [
+      "eslint --fix"
+    ]
+  },
+  "packageManager": "bun@1.3.13",
   "trustedDependencies": [
     "@parcel/watcher",
+    "esbuild",
     "unrs-resolver"
   ]
 }
