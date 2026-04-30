@@ -1,0 +1,32 @@
+{
+  "name": "nuxt-rellax-docs",
+  "private": false,
+  "author": {
+    "name": "Behon Baker",
+    "email": "behon.baker@yahoo.com",
+    "url": "https://behonbaker.com"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "clean": "rm -rf .data .nuxt .output dist node_modules && bun i",
+    "dev": "nr dev:prepare && nuxi dev --host",
+    "generate": "nuxt generate",
+    "prepare": "nuxt prepare",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@baybreezy/docd": "latest"
+  },
+  "devDependencies": {
+    "@antfu/ni": "latest",
+    "@types/node": "latest",
+    "nuxt": "^4.4.4",
+    "typescript": "^6.0.3",
+    "vue": "latest"
+  },
+  "trustedDependencies": [
+    "@morev/vue-transitions",
+    "@parcel/watcher"
+  ]
+}
