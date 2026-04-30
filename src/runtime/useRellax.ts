@@ -1,9 +1,8 @@
+import { useRuntimeConfig } from "nuxt/app";
 import Rellax from "rellax";
 import type { RellaxInstance } from "rellax";
 import { isRef, onMounted, onUnmounted, onUpdated, ref, watch } from "vue";
 import type { Ref } from "vue";
-
-import { useRuntimeConfig } from "nuxt/app";
 
 import type { RellaxReturn, UseRellaxOptions } from "./types";
 
@@ -73,8 +72,7 @@ export const useRellax = (el?: ElArg, options?: OptionsArg): RellaxReturn => {
     initialize();
   };
 
-  const { observeIntersection, intersectionThreshold, intersectionRootMargin } =
-    resolveOptions();
+  const { observeIntersection, intersectionThreshold, intersectionRootMargin } = resolveOptions();
 
   if (observeIntersection && typeof IntersectionObserver !== "undefined") {
     let observer: IntersectionObserver | null = null;
