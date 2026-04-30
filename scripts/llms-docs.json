@@ -1,0 +1,27 @@
+[
+  {
+    "name": "nuxt",
+    "url": "https://nuxt.com/llms-full.txt",
+    "file": "llms-full.txt"
+  },
+  {
+    "name": "vuejs",
+    "url": "https://vuejs.org/llms-full.txt",
+    "file": "llms-full.txt"
+  },
+  {
+    "name": "reka-ui",
+    "url": "https://reka-ui.com/llms-full.txt",
+    "file": "llms-full.txt"
+  },
+  {
+    "name": "ui-thing",
+    "url": "https://uithing.com/llms-full.txt",
+    "file": "llms-full.txt"
+  },
+  {
+    "name": "nuxt-content",
+    "url": "https://content.nuxt.com/llms-full.txt",
+    "file": "llms-full.txt"
+  }
+]
