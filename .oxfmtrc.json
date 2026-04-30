@@ -1,7 +1,9 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
   "ignorePatterns": ["**/*.{md,mdc,mdx}"],
-  "jsdoc": true,
+  "jsdoc": {
+    "bracketSpacing": true
+  },
   "sortImports": true,
   "sortTailwindcss": { "attributes": [":class"], "functions": ["tv", "tw"] },
   "sortPackageJson": { "sortScripts": true },
