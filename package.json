@@ -31,6 +31,7 @@
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare docs",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
+    "netlify": "bun install --frozen-lockfile && bun run dev:prepare && bun run prepack && bun install --frozen-lockfile --cwd docs && bun run --cwd docs build",
     "prepack": "nuxt-module-build build",
     "prepare": "husky",
     "release": "nr test && nr prepack && changelogen --release && npm publish && git push --follow-tags",
