@@ -15,4 +15,7 @@ export default defineNuxtConfig({
       description: "A starter documentation site powered by Docd.",
     },
   },
+  vite: {
+    optimizeDeps: { include: ["remark-emoji"] },
+  },
 });

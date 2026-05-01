@@ -27,6 +27,10 @@
   },
   "trustedDependencies": [
     "@morev/vue-transitions",
-    "@parcel/watcher"
+    "@parcel/watcher",
+    "better-sqlite3",
+    "esbuild",
+    "sharp",
+    "vue-demi"
   ]
 }
