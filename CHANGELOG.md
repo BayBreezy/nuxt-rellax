@@ -1,5 +1,62 @@
 # Changelog
 
+## v0.0.19
+
+[compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.18...v0.0.19)
+
+### 🚀 Enhancements
+
+- Enhance module options and auto-import components for Rellax ([1fb10e0](https://github.com/BayBreezy/nuxt-rellax/commit/1fb10e0))
+- Add RellaxElement component with customizable options and lazy-init support ([32984a6](https://github.com/BayBreezy/nuxt-rellax/commit/32984a6))
+- Enhance Rellax directive with runtime configuration and improved instance management ([640f004](https://github.com/BayBreezy/nuxt-rellax/commit/640f004))
+- Add TypeScript interfaces for Rellax options and return types ([36c41cf](https://github.com/BayBreezy/nuxt-rellax/commit/36c41cf))
+- Implement useRellaxGroup for managing multiple Rellax instances with shared options ([e8c70bb](https://github.com/BayBreezy/nuxt-rellax/commit/e8c70bb))
+- Add Husky hooks for commit message linting and pre-commit checks ([f057763](https://github.com/BayBreezy/nuxt-rellax/commit/f057763))
+- Add commitlint configuration for conventional commit messages ([119128a](https://github.com/BayBreezy/nuxt-rellax/commit/119128a))
+- Add scripts for downloading LLMS documentation and cleaning workspace ([40e7a95](https://github.com/BayBreezy/nuxt-rellax/commit/40e7a95))
+- Add pull request template for consistent PR submissions ([7c05e01](https://github.com/BayBreezy/nuxt-rellax/commit/7c05e01))
+- Add issue templates for bug reports and feature requests ([a9c9896](https://github.com/BayBreezy/nuxt-rellax/commit/a9c9896))
+- Add vue-tsc as a dependency for improved TypeScript support ([6ae6949](https://github.com/BayBreezy/nuxt-rellax/commit/6ae6949))
+
+### 💅 Refactors
+
+- Change over to bun, add and configure oxfmt ([5891d00](https://github.com/BayBreezy/nuxt-rellax/commit/5891d00))
+- Remove playground components and styles ([a261109](https://github.com/BayBreezy/nuxt-rellax/commit/a261109))
+
+### 📖 Documentation
+
+- Add package to playground and add packagemanger value ([9c2b1b2](https://github.com/BayBreezy/nuxt-rellax/commit/9c2b1b2))
+- Add new documentation for the module ([a860f21](https://github.com/BayBreezy/nuxt-rellax/commit/a860f21))
+- Clarify usage of useRellaxGroup with static vs dynamic elements ([c9e07f1](https://github.com/BayBreezy/nuxt-rellax/commit/c9e07f1))
+- Correct closing tag for speed slider input in composable example ([e1392aa](https://github.com/BayBreezy/nuxt-rellax/commit/e1392aa))
+- Add favicon and logos for improved branding ([2d48018](https://github.com/BayBreezy/nuxt-rellax/commit/2d48018))
+- Add contributing guide for project setup and contribution process ([6720431](https://github.com/BayBreezy/nuxt-rellax/commit/6720431))
+
+### 🏡 Chore
+
+- Update jsdoc configuration to include bracketSpacing option ([aab66e3](https://github.com/BayBreezy/nuxt-rellax/commit/aab66e3))
+- Update dependencies and scripts in package.json ([3d48887](https://github.com/BayBreezy/nuxt-rellax/commit/3d48887))
+- Update nuxt.config.ts to optimize dependencies and add new trusted dependencies in package.json ([65e6198](https://github.com/BayBreezy/nuxt-rellax/commit/65e6198))
+- Remove unused favicon and logo assets from the public directory ([a6a5615](https://github.com/BayBreezy/nuxt-rellax/commit/a6a5615))
+- Update commitlint configuration to improve header length rules ([ad5f8d5](https://github.com/BayBreezy/nuxt-rellax/commit/ad5f8d5))
+- Update lock file ([ce02e8a](https://github.com/BayBreezy/nuxt-rellax/commit/ce02e8a))
+- Update dependabot configuration to ensure weekly updates for npm and GitHub Actions ([9b9bcd4](https://github.com/BayBreezy/nuxt-rellax/commit/9b9bcd4))
+
+### ✅ Tests
+
+- Add group and modifiers pages with Rellax integration and corresponding tests ([2ad11d4](https://github.com/BayBreezy/nuxt-rellax/commit/2ad11d4))
+
+### 🎨 Styles
+
+- Format code for improved readability in RellaxElement.vue ([0e552bc](https://github.com/BayBreezy/nuxt-rellax/commit/0e552bc))
+- Reorder import statements for consistency in useRellax.ts ([b8842f7](https://github.com/BayBreezy/nuxt-rellax/commit/b8842f7))
+- Reorder import statements and format comments for consistency in module.ts ([995e72d](https://github.com/BayBreezy/nuxt-rellax/commit/995e72d))
+- Reorganize logo configuration in app.config.ts for clarity ([b75f134](https://github.com/BayBreezy/nuxt-rellax/commit/b75f134))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](https://github.com/BayBreezy))
+
 ## v0.0.18
 
 [compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.17...v0.0.18)
