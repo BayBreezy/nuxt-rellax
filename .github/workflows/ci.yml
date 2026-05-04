@@ -25,7 +25,7 @@ jobs:
         run: bun run fmt:check
 
       - name: Lint
-        run: bunx eslint .
+        run: bun run lint
 
       - name: Build stub
         run: bun run dev:prepare
