@@ -10,7 +10,7 @@
   "scripts": {
     "build": "nuxt build",
     "clean": "rm -rf .data .nuxt .output dist node_modules && bun i",
-    "dev": "nr dev:prepare && nuxi dev --host",
+    "dev": "nuxi dev --host",
     "generate": "nuxt generate",
     "prepare": "nuxt prepare",
     "preview": "nuxt preview"
