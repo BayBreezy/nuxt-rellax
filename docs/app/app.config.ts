@@ -2,6 +2,10 @@ const repoBase = "https://github.com/BayBreezy/nuxt-rellax";
 
 export default defineAppConfig({
   docd: {
+    github: {
+      repo: repoBase,
+      contentDir: "docs/content",
+    },
     ui: {
       extraLinks: [
         {
