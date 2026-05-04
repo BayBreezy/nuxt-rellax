@@ -26,6 +26,7 @@
   });
 </script>
 
+<!-- eslint-disable vue/html-self-closing -->
 <template>
   <div class="w-full space-y-3">
     <!-- Controls -->
@@ -52,7 +53,7 @@
         max="8"
         step="1"
         class="accent-primary w-32"
-      >
+      />
       <code class="w-6 text-center font-mono text-xs">{{ speed }}</code>
       <UiButton size="xs" variant="outline" @click="handleReinit()">Apply</UiButton>
     </div>
