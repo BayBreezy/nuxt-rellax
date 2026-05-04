@@ -31,6 +31,7 @@
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && cd docs && nuxi prepare",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
+    "lint": "eslint --fix .",
     "netlify": "bun install --frozen-lockfile && bun run dev:prepare && bun run prepack && bun install --frozen-lockfile --cwd docs && bun run --cwd docs build",
     "prepack": "nuxt-module-build build",
     "prepare": "husky",
@@ -67,11 +68,11 @@
     "vue-tsc": "^3.2.8"
   },
   "lint-staged": {
-    "*.{js,ts,vue,css,json,yml}": [
-      "oxfmt --no-error-on-unmatched-pattern"
-    ],
     "*.{js,ts,vue}": [
       "eslint --fix"
+    ],
+    "*.{js,ts,vue,css,json,yml}": [
+      "oxfmt --no-error-on-unmatched-pattern"
     ]
   },
   "packageManager": "bun@1.3.13",
