@@ -22,7 +22,7 @@
     "@antfu/ni": "latest",
     "@types/node": "latest",
     "nuxt": "^4.4.4",
-    "typescript": "^6.0.3",
+    "typescript": "^7.0.2",
     "vue": "latest"
   },
   "trustedDependencies": [
