@@ -1,5 +1,46 @@
 # Changelog
 
+## v0.0.20
+
+[compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.19...v0.0.20)
+
+### 🚀 Enhancements
+
+- Add netlify script for streamlined deployment process ([bfc5236](https://github.com/BayBreezy/nuxt-rellax/commit/bfc5236))
+
+### 🩹 Fixes
+
+- Correct self-closing tag for input element [skip netlify] ([59f58ef](https://github.com/BayBreezy/nuxt-rellax/commit/59f58ef))
+- Add eslint fix command to lint script and reorder lint-staged configuration ([f0d982c](https://github.com/BayBreezy/nuxt-rellax/commit/f0d982c))
+- Update lint command in CI workflow to use bun run lint ([e83f8b8](https://github.com/BayBreezy/nuxt-rellax/commit/e83f8b8))
+- Correct self-closing tag in composable example and adjust formatting ([00356ec](https://github.com/BayBreezy/nuxt-rellax/commit/00356ec))
+
+### 💅 Refactors
+
+- Simplify dev scripts and update eslint version ([7da981c](https://github.com/BayBreezy/nuxt-rellax/commit/7da981c))
+
+### 📖 Documentation
+
+- Add extra links for GitHub, issue reporting, feature requests, and donations ([cdb76c9](https://github.com/BayBreezy/nuxt-rellax/commit/cdb76c9))
+- Add GitHub configuration to app config for repository details ([cdae25d](https://github.com/BayBreezy/nuxt-rellax/commit/cdae25d))
+
+### 🏡 Chore
+
+- **release:** V0.0.19 ([b855b5f](https://github.com/BayBreezy/nuxt-rellax/commit/b855b5f))
+- Update vue-tsc to version 3.2.8 in package.json and bun.lock [skip ci] ([ece3df3](https://github.com/BayBreezy/nuxt-rellax/commit/ece3df3))
+- Update lock file ([6b2aa4c](https://github.com/BayBreezy/nuxt-rellax/commit/6b2aa4c))
+- Update dependencies and devDependencies in package.json and docs/package.json ([038918d](https://github.com/BayBreezy/nuxt-rellax/commit/038918d))
+- Add Netlify configuration for build environment ([7a2f53d](https://github.com/BayBreezy/nuxt-rellax/commit/7a2f53d))
+- Stop oxc from formatting netlify config file ([4682aa6](https://github.com/BayBreezy/nuxt-rellax/commit/4682aa6))
+
+### 🎨 Styles
+
+- Format and lint ([6f86919](https://github.com/BayBreezy/nuxt-rellax/commit/6f86919))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](https://github.com/BayBreezy))
+
 ## v0.0.19
 
 [compare changes](https://github.com/BayBreezy/nuxt-rellax/compare/v0.0.18...v0.0.19)
