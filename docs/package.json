@@ -21,8 +21,9 @@
   "devDependencies": {
     "@antfu/ni": "latest",
     "@types/node": "latest",
-    "nuxt": "^4.4.4",
-    "typescript": "^6.0.3",
+    "node-gyp": "^11.4.2",
+    "nuxt": "^4.5.2",
+    "typescript": "^6",
     "vue": "latest"
   },
   "trustedDependencies": [
